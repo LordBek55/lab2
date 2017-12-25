@@ -12,6 +12,11 @@ figure('Name', '2-D signal spectrum phase');
 imshow(noisyImage.phase, []); % Display the spectrum
 
 %%
+% I don't know how build a filer here. Can you guys add a filter under block.@ basher
+
+
+
+%%
 % noisyImage.spectr=fft2(noisyImage.ns); %Calculate 2-D Fourier spectrum
 % noisyImage.fourier = fftshift(noisyImage.spectr);
 % noisyImage.magnitude = mat2gray(log(abs(noisyImage.fourier)+1)); %amplitude

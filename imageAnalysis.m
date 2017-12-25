@@ -3,9 +3,9 @@ originalImage=originalImagefile.imageOriginal;
 noisyImage=originalImagefile.imageNoise;
 %%
 originalImagefile.spectr=fft2(noisyImage); %Calculate 2-D Fourier spectrum
-noisyImage.fourier = fftshift(noisyImage.spectr);
-noisyImage.magnitude = mat2gray(log(abs(noisyImage.fourier)+1)); %amplitude
-noisyImage.phase = angle (noisyImage.fourier);
+originalImagefile.fourier = fftshift(noisyImage.spectr);
+originalImagefile.magnitude = mat2gray(log(abs(noisyImage.fourier)+1)); %amplitude
+originalImagefile.phase = angle (noisyImage.fourier);
 figure('Name', '2-D signal spectrum emplitude');
 imshow(noisyImage.magnitude, []); % Display the spectrum
 figure('Name', '2-D signal spectrum phase');
